@@ -22,6 +22,9 @@ app.use(
 
 app.use("/api/upload", uploadRoute);
 app.use("/api/test", testRoute);
+app.use("/api/ai", aiRoute);
+app.use("/api/user", userRoute);
+app.use("/api/history", historyRoute);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
